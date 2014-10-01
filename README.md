@@ -37,10 +37,12 @@ OPTIONS:
    -t <token>     API token
    -r <room id>   Room ID
    -f <from name> From name
-   -c <color>     Message color (yellow, red, green, purple or random - default: yellow)
+   -c <color>     Message color (yellow, red, green, purple, gray or random - default: yellow)
    -m <format>    Message format (html or text - default: html)
    -i <input>     Message to send to room, allows you to specify input via command line instead of stdin
    -l <level>     Nagios message level (critical, warning, unknown, ok, down, up). Will override color.
+   -s <status>    Zabbix trigger status (PROBLEM, OK). Re-maps <level> (-l) to Zabbix trigger severity 
+                  (Disaster, High, Average, Warning, Information, Not classified). Will override color.
    -n             Trigger notification for people in the room (default: 0)
    -o             API host (api.hipchat.com)
    -v <version>   API version (default: v1)
