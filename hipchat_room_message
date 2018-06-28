@@ -63,7 +63,7 @@ STATUS=${HIPCHAT_STATUS:-}
 API=${HIPCHAT_API:-v1}
 ALLOW_INSECURE=false
 
-while getopts “ht:r:f:c:m:o:i:l:s:v:nk” OPTION; do
+while getopts "ht:r:f:c:m:o:i:l:s:v:nk" OPTION; do
   case $OPTION in
     h) usage; exit 1;;
     t) TOKEN=$OPTARG;;
